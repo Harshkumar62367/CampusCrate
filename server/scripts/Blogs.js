@@ -71,6 +71,24 @@ const blogs = [
             },
         ]
     },
+    {
+        id: 5,
+        name: "Introduction to Polkadot",
+        description: "Provides an overview of Polkadot, a next-generation blockchain platform that aims to connect different blockchain networks together. The author explains the key concepts of Polkadot, and discusses the benefits of using Polkadot for building decentralized applications.",
+        image: "https://source.unsplash.com/ioyEITUD2G8",
+        link: "https://medium.com/@yverma0720/introduction-to-polkadot-4ee164744435",
+        clubName: "TESLA Club",
+        tag: ["Polkadot",],
+        author: "Yugank Verma",
+        likes: 12,
+        date: "2022-10-15T00:00:00.000Z",
+        comments: [
+            {
+                id: 1,
+                text: "One of the beginner guide on Polkadot.",
+            },
+        ]
+    },
 ]
 
 module.exports = blogs;

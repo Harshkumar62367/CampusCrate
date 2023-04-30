@@ -14,7 +14,7 @@ const Blog = () => {
   const getBlog = async () => {
     setLoading(true);
     try {
-      const res = await axios.get(`http://localhost:4000/api/blog/${blogId}`);
+      const res = await axios.get(`https://campuscrate-production-babe.up.railway.app/api/blog/${blogId}`);
       // console.log(res.data);
       setBlog(res.data);
       setLoading(false);
@@ -33,7 +33,7 @@ const Blog = () => {
   return (
     <div>
       {
-        loading ? <h1>Loading...</h1> :
+        loading ? <h1 className='text-center my-10'>Loading...</h1> :
           <div className='m-auto flex flex-col items-center justify-center'>
             <h1 className='lg:text-3xl md:text-3xl text-2xl font-bold text-purple-500 my-10 mt-6'>{blog.name}</h1>
 

@@ -12,7 +12,7 @@ const Event = () => {
   const getEvents = async () => {
     setLoading(true);
     try {
-      const res = await axios.get('http://localhost:4000/api/events');
+      const res = await axios.get('https://campuscrate-production-babe.up.railway.app/api/events');
       setEvents(res.data);
       // console.log(res.data);
     } catch (error) {

@@ -11,7 +11,7 @@ const Blogs = () => {
     const getBlogs = async () => {
         setLoading(true);
         try {
-            const res = await axios.get('http://localhost:4000/api/blogs');
+            const res = await axios.get('https://campuscrate-production-babe.up.railway.app/api/blogs');
             setBlogs(res.data);
             console.log(res.data);
         } catch (error) {

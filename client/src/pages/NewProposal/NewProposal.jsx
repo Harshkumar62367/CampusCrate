@@ -21,7 +21,7 @@ const NewProposal = () => {
     if(!formdata.description) return alert('Please enter a title');
     setCreating(true);
     try {
-      const response = await axios.post('https://campus-crate-production.up.railway.app/api/create-proposal', formdata);
+      const response = await axios.post('https://campuscrate-production-babe.up.railway.app/api/create-proposal', formdata);
       console.log(response);
       setFormData({
         description: '',

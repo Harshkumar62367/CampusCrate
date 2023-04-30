@@ -1,6 +1,5 @@
 const events = [
-
-		{
+    {
         id: 0,
         name: "Algorand Introductory Session",
         image: "https://github.com/Harshkumar62367/CampusCrate/raw/main/CampusCrate.png",
