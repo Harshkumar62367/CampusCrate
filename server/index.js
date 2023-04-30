@@ -105,7 +105,6 @@ app.get('/api/blog/:blogId', async (req, res) => {
     try {
         const blogId = req.params.blogId;
         const blog = blogs.find(blog => blog.id == blogId);
-        console.log(blog);
         res.send(blog);
     } catch (error) {
         res.status(500).json("failed to get projects!");
