@@ -1,53 +1,51 @@
 <div align="center">
     <img src="./CampusCrate.png">
 </div>
-<p align='center'>A <strong>Decentralised</strong> solution for college projects to get grants from Ecosystem.</p>
-<h1><a href="https://campus-crate.vercel.app/"> CampusCrate </a> ⛓</h1>
+<p align='center'>A <strong>Decentralised</strong> solution to accelerate Blockchain clubs.</p>
+<h1><a href="https://campus-crate-kohl.vercel.app/"> CampusCrate </a> ⛓</h1>
 
 ![website](https://user-images.githubusercontent.com/90385824/232301876-bb6633df-41e3-4a18-ac69-82307c20268c.png)
 <p align='center' font-size='5px' ><font size='1px'>Home Page</font></p>
 
-![votin page](https://user-images.githubusercontent.com/90385824/232307287-3f542854-3bfb-42a0-9c2b-e02922e9cda8.png)
+![voting](https://user-images.githubusercontent.com/72465090/235378011-0a3b9274-e470-4e2c-a543-196d49dd6d56.png)
 <p align='center' font-size='5px' ><font size='1px'>Voting Page</font></p>
 
 DAO functionalities:
 
-* A two-tier DAO for incubating and accelerating ecosystem projects.
-* Top tier consists of CampusCrate DAO that is accessible for ecosystem verifiers and club leaders.
-* Bottom level DAO for college/university clubs to develop projects(personalized for every university with limited functionality).
+* A Decentralized Autonomous Organization (DAO) expertly designed to cultivate and expedite the ecosystem projects.
+* CampusCrate DAO is for college/university clubs to develop projects(personalized for every university with limited functionality) with verifiers and club leaders to vote on proposals.
 * NFTs for members and leaders with DAO tokens for voting proposals.
-* Club leader can propose new proposals and vote on proposals, as well as secure funding for their respective Blockchain club
+* Club leader can propose new proposals and vote on proposals, as well as secure funding for their respective Blockchain club.
 
-<br>
-<h2 align='center'> This is project is using <em><strong>Filecoin / IPFS</strong></em> for NFT storage </h2>
-<div align='center'>
-
-![download](https://user-images.githubusercontent.com/90385824/232304334-6a261296-d342-439f-8455-cb5ea2a8b17d.png)
-</div>
-We have used Filecoin for storing our CampusCrate membership NFTs.
 <br>
 <br>
 
 # Problem we trying to Solve 🤔
 
-* Student entrepreneurship in the web3 space faces significant challenges.
-* Many students abandon their web3 projects after hackathons due to a lack of guidance, vision, and funding.
-* The lack of proper web3 student infrastructure is a key factor in preventing projects from gaining traction and recognition.
+* Many blockchain clubs around the world face significant challenges to get coverage and collaborate with other clubs.
+* Many student clubs die out due to a lack of guidance, vision, and funding.
+* The lack of proper web3 student infrastructure is a key factor in preventing blockchain clubs/projects from gaining traction and recognition.
 
 <br>
 
 # Solution we Gave 😎
 
-1. Introducing an innovative solution to expedite student projects :-      
-    A Decentralized Autonomous Organisation (DAO) specifically designed for university Blockchain clubs. Our approach comprises a two-tier structure of DAOs, starting with individual University Blockchain clubs that discover and nominate promising projects on campus, with voting conducted by club members
+1. Introducing an innovative solution to expedite student clubs - a Decentralized Autonomous Organisation (DAO) specifically designed for university Blockchain clubs. 
 
-2. The second tier involves the collaboration of these university DAOs, where each Club Leader can propose guidance and funding for projects. Every club leader has the power to cast their vote on proposals, making this a truly democratic and inclusive platform.
+2. Our approach comprises a DAO structure built for Blockchain club leaders around the world, to accelerate their Blockchain clubs through the global community of CampusCrate.
+
+3. We have built excellent tooling in our DAO so that any club leader can showcase his club projects, bounties and achievements and can even request for Grant to support his/her club operations.
 
 <br>
 
 # Our Platform
 
 ![website](https://user-images.githubusercontent.com/90385824/232301876-bb6633df-41e3-4a18-ac69-82307c20268c.png)
+![image](https://user-images.githubusercontent.com/72465090/235378226-f51704e6-9451-42e1-9981-f25472929916.png)
+![image](https://user-images.githubusercontent.com/72465090/235378255-b56aed1d-d413-4857-aeee-2d81e2f9a735.png)
+![image](https://user-images.githubusercontent.com/72465090/235378264-237f429f-0eba-46ea-9b68-6bde2107f1d1.png)
+![image](https://user-images.githubusercontent.com/72465090/235378276-674e54ac-2d2c-4d4b-945b-bef303f33076.png)
+
 
 <br>
 
@@ -139,7 +137,7 @@ This project uses `Tailwind CSS` for styling. Refer to https://tailwindcss.com/ 
 
 ## Live WebSite URL
 
-The WebSite is deployed in https://campus-crate.vercel.app/
+The WebSite is deployed in https://campus-crate-kohl.vercel.app/
 
 Click on the link to see the website.
 
