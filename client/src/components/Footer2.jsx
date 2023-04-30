@@ -8,7 +8,7 @@ const Footer2 = () => {
         <p>© {year} CampusCrate. All Rights Reserved.</p>
         <p>
           Designed & Developed by{" "}
-          <a className="text-base font-medium text-pink-600" href="https://github.com/Harshkumar62367/TrustMarket">
+          <a className="text-base font-medium text-pink-600" href="https://github.com/Harshkumar62367/CampusCrate">
             CampusCrate Team
           </a>
           .
