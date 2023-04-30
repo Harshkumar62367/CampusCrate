@@ -4,7 +4,7 @@ import { AddressZero } from "@ethersproject/constants";
 import { useNavigate } from 'react-router-dom';
 
 const Proposal = () => {
-
+    document.title = "Campus DAO | Proposals";
     const [proposals, setProposals] = useState([]);
     const [isVoting, setIsVoting] = useState(false);
     const [hasVoted, setHasVoted] = useState(false);

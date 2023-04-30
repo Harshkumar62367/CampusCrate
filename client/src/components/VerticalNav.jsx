@@ -7,6 +7,8 @@ import { useAddress } from '@thirdweb-dev/react';
 import { useNavigate } from 'react-router-dom';
 import { FaBloggerB, FaVoteYea } from 'react-icons/fa';
 import { AiFillProject } from 'react-icons/ai';
+import {BsCalendar2EventFill} from 'react-icons/bs';
+import {SiOpenbugbounty} from 'react-icons/si';
 
 
 const VerticalNav = ({ children, name }) => {
@@ -14,11 +16,11 @@ const VerticalNav = ({ children, name }) => {
     const navigate = useNavigate();
     const address = useAddress();
 
-    useEffect(() => {
-        if (!address) {
-            navigate('/');
-        }
-    }, [])
+    // useEffect(() => {
+    //     if (!address) {
+    //         navigate('/');
+    //     }
+    // }, [])
 
     return (
         <div className='pt-0 mt-0'>
@@ -63,6 +65,18 @@ const VerticalNav = ({ children, name }) => {
                             <Link to="/projects" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
                                 <AiFillProject size={20} className='text-gray-400 ml-1' />
                                 <span className="flex-1 ml-3 whitespace-nowrap">Projects</span>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/events" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <BsCalendar2EventFill size={20} className='text-gray-400 ml-1' />
+                                <span className="flex-1 ml-3 whitespace-nowrap">Events</span>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/bounties" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <SiOpenbugbounty size={20} className='text-gray-400 ml-1' />
+                                <span className="flex-1 ml-3 whitespace-nowrap">Bounties</span>
                             </Link>
                         </li>
                         <li>

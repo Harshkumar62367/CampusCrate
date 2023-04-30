@@ -5,6 +5,7 @@ import { BsDot } from 'react-icons/bs'
 
 
 const Blog = () => {
+  document.title = "Campus DAO | Blog";
 
   const { blogId } = useParams();
   const [blog, setBlog] = useState({});

@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 const Dashboard = () => {
   const address = useAddress();
   const navigate = useNavigate();
+  document.title = "Campus DAO | Dashboard";
   // console.log("👋 Address:", address);
 
 

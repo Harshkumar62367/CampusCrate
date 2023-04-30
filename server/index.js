@@ -13,6 +13,8 @@ var setUpVote = require('./scripts/9-setup-vote.js');
 var createVoteProposal = require('./scripts/10-create-vote-proposals.js');
 var projects = require('./scripts/Projects.js');
 var blogs = require('./scripts/Blogs.js');
+var bounties = require('./scripts/Bounties.js');
+var events = require('./scripts/Events.js');
 
 
 const app = express();
@@ -97,7 +99,23 @@ app.get('/api/blogs', async (req, res) => {
     try {
         res.send(blogs);
     } catch (error) {
+        res.status(500).json("failed to get blogs!");
+    }
+});
+
+app.get('/api/events', async (req, res) => {
+    try {
+        res.send(events);
+    } catch (error) {
         res.status(500).json("failed to get projects!");
+    }
+});
+
+app.get('/api/bounties', async (req, res) => {
+    try {
+        res.send(bounties);
+    } catch (error) {
+        res.status(500).json("failed to get bounties!");
     }
 });
 

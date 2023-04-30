@@ -1,10 +1,9 @@
 import "./styles/Home.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Dashboard, HomePage, NewProposal, Proposal, Vote, Projects } from "./pages";
+import { Dashboard, HomePage, NewProposal, Proposal, Vote, Projects, Event, Bounties, Blogs, Blog } from "./pages";
 import { Layout, VerticalNav } from "./components";
 import { ThirdwebProvider } from "@thirdweb-dev/react";
-import Blogs from "./pages/Blogs/Blogs";
-import Blog from "./pages/Blogs/Blog";
+
 
 export default function Home() {
 
@@ -61,6 +60,22 @@ export default function Home() {
               </>
             } />
 
+            <Route path="/bounties" element={
+              <>
+                <VerticalNav name={'Bounties'}>
+                  <Bounties />
+                </VerticalNav>
+              </>
+            } />
+
+            <Route path="/events" element={
+              <>
+                <VerticalNav name={'Events'}>
+                  <Event />
+                </VerticalNav>
+              </>
+            } />
+
             <Route path="/blogs" element={
               <>
                 <VerticalNav name={'Blogs'}>
@@ -69,10 +84,10 @@ export default function Home() {
               </>
             } />
 
-             <Route path="/blog/:blogId" element={
+            <Route path="/blog/:blogId" element={
               <>
                 <VerticalNav name={'Blog'}>
-                  <Blog/>
+                  <Blog />
                 </VerticalNav>
               </>
             } />

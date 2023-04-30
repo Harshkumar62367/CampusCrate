@@ -7,6 +7,7 @@ const NewProposal = () => {
 
   const address = useAddress();
   const navigate = useNavigate();
+  document.title = "Campus DAO | New Proposal";
 
   const [creating, setCreating] = useState(false);
 
