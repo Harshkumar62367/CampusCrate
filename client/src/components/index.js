@@ -8,5 +8,6 @@ import Features from "./Features";
 import About from "./About";
 import Features2 from './Features2'
 import Tools from "./Tools";
+import ProjectCard from "./ProjectCard";
 
-export { Header, Layout, VerticalNav, NavBar, Footer, Footer2,Features, About, Features2, Tools };
+export { Header, Layout, VerticalNav, NavBar, Footer, Footer2,Features, About, Features2, Tools , ProjectCard};

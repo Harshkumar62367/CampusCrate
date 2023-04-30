@@ -1,19 +1,24 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { ConnectWallet } from '@thirdweb-dev/react'
 import { Link } from 'react-router-dom'
 import { HiMenuAlt3 } from "react-icons/hi";
 import { FiX } from "react-icons/fi";
 import { useAddress } from '@thirdweb-dev/react';
 import { useNavigate } from 'react-router-dom';
+import { FaBloggerB, FaVoteYea } from 'react-icons/fa';
+import { AiFillProject } from 'react-icons/ai';
 
 
 const VerticalNav = ({ children, name }) => {
     const [menu, setMenu] = useState(false);
     const navigate = useNavigate();
     const address = useAddress();
-    if (!address) {
-        navigate('/');
-    }
+
+    useEffect(() => {
+        if (!address) {
+            navigate('/');
+        }
+    }, [])
 
     return (
         <div className='pt-0 mt-0'>
@@ -22,7 +27,7 @@ const VerticalNav = ({ children, name }) => {
                     {!menu ? <HiMenuAlt3 size={28} /> : <FiX size={28} />}
                 </button>
                 <div className="h-full mt-0 px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-900">
-                    <ul className="space-y-2 font-medium">
+                    <ul className="space-y-4 font-medium">
                         <li>
                             <Link to="/">
                                 <img className='h-12 m-2 mb-4' src="images/CampusCrate.svg" alt="CampusCrate Logo" />
@@ -50,8 +55,20 @@ const VerticalNav = ({ children, name }) => {
                         </li>
                         <li>
                             <Link to="/vote" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-                                <svg aria-hidden="true" className="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd"></path></svg>
+                                <FaVoteYea size={20} className='text-gray-400 ml-1' />
                                 <span className="flex-1 ml-3 whitespace-nowrap">Vote</span>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/projects" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <AiFillProject size={20} className='text-gray-400 ml-1' />
+                                <span className="flex-1 ml-3 whitespace-nowrap">Projects</span>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/blogs" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <FaBloggerB size={20} className='text-gray-400 ml-1' />
+                                <span className="flex-1 ml-3 whitespace-nowrap">Blogs</span>
                             </Link>
                         </li>
                     </ul>

@@ -188,8 +188,8 @@ Team of <em> CampusCrate </em> 💕:
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 <div align='center'>
-<a href = "https://github.com/SudhansuuRanjan/campus-crate/graphs/contributors">
-  <img src = "https://contrib.rocks/image?repo=SudhansuuRanjan/campus-crate"/>
+<a href = "https://github.com/Harshkumar62367/CampusCrate/graphs/contributors">
+  <img src = "https://contrib.rocks/image?repo=Harshkumar62367/CampusCrate"/>
 </a>
 </div>
 

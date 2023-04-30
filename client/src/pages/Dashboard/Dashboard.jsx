@@ -30,14 +30,11 @@ const Dashboard = () => {
     return str.substring(0, 6) + '...' + str.substring(str.length - 4);
   };
 
-  if (!hasClaimedNFT) {
-    navigate("/");
-  }
-
 
   useEffect(() => {
+
     if (!hasClaimedNFT) {
-      return;
+      return navigate("/");
     }
     // Just like we did in the 7-airdrop-token.js file! Grab the users who hold our NFT
     // with tokenId 0.
@@ -58,7 +55,7 @@ const Dashboard = () => {
 
   useEffect(() => {
     if (!hasClaimedNFT) {
-      return;
+      return navigate("/");
     }
 
     const getAllBalances = async () => {
@@ -106,7 +103,7 @@ const Dashboard = () => {
               </tr>
             </thead>
             <tbody>
-              {memberList.length === 0 ? <div className='my-16 text-center w-full'>Loading...</div> : memberList.map((member, index) => {
+              {memberList.length === 0 ? <p className='my-16 text-center w-full'>Loading...</p> : memberList.map((member, index) => {
                 return (
                   <tr key={index}>
                     <td className='px-5 py-3'>{shortenAddress(member.address)}</td>

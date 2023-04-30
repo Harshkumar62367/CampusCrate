@@ -11,6 +11,8 @@ var Airdrop = require('./scripts/7-airdrop-token.js');
 var deployVote = require('./scripts/8-deploy-vote.js');
 var setUpVote = require('./scripts/9-setup-vote.js');
 var createVoteProposal = require('./scripts/10-create-vote-proposals.js');
+var projects = require('./scripts/Projects.js');
+var blogs = require('./scripts/Blogs.js');
 
 
 const app = express();
@@ -80,6 +82,33 @@ app.post('/api/create-proposal', async (req, res) => {
         res.send(data);
     } catch (error) {
         res.send("failed to create proposal!");
+    }
+});
+
+app.get('/api/projects', async (req, res) => {
+    try {
+        res.send(projects);
+    } catch (error) {
+        res.status(500).json("failed to get projects!");
+    }
+});
+
+app.get('/api/blogs', async (req, res) => {
+    try {
+        res.send(blogs);
+    } catch (error) {
+        res.status(500).json("failed to get projects!");
+    }
+});
+
+app.get('/api/blog/:blogId', async (req, res) => {
+    try {
+        const blogId = req.params.blogId;
+        const blog = blogs.find(blog => blog.id == blogId);
+        console.log(blog);
+        res.send(blog);
+    } catch (error) {
+        res.status(500).json("failed to get projects!");
     }
 });
 

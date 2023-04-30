@@ -1,11 +1,12 @@
 import React from "react";
 import { Heading } from "./Heading";
-import { BsFillCheckSquareFill } from "react-icons/bs";
+import { BsFillCheckSquareFill, BsFillBuildingsFill, BsBookHalf } from "react-icons/bs";
+import { FcEnteringHeavenAlive } from "react-icons/fc";
 
 const Tools = () => {
-    const handleClick = () => {
-        console.log("clicked");
-    }
+  const handleClick = () => {
+    console.log("clicked");
+  }
   return (
 
     <>
@@ -28,7 +29,7 @@ const Tools = () => {
               className="flex items-center bg-gray-100 dark:bg-[#10111f] border-2 rounded-3xl w-[85%] md:w-[20rem] lg:w-[24rem] border-[#2F304E] m-[auto]"
             >
               <div className="p-2 px-4 pr-6">
-                <img src="/images/DAo.png" height="50" width="50" alt="gps" />
+                <FcEnteringHeavenAlive size={50} />
               </div>
               <div>
                 <h1 className="text-2xl font-bold">As DAO</h1>
@@ -40,7 +41,7 @@ const Tools = () => {
               className="flex items-center bg-gray-100 dark:bg-[#10111f] border-2 rounded-3xl w-[85%] md:w-[20rem] lg:w-[24rem] border-[#2F304E] m-[auto]"
             >
               <div className="p-2 px-4 pr-6">
-                <img src="/images/GPS.png" height="50" width="50" alt="gps" />
+                <BsBookHalf size={34} className="text-pink-400 m-2"/>
               </div>
               <div>
                 <h1 className="text-2xl font-bold">For Students</h1>
@@ -52,7 +53,7 @@ const Tools = () => {
               className="flex items-center bg-gray-100 dark:bg-[#10111f] border-2 rounded-3xl w-[85%] md:w-[20rem] lg:w-[24rem] border-[#2F304E] m-[auto]"
             >
               <div className="p-2 px-4 pr-6">
-                <img src="/images/Math.png" height="50" width="50" alt="gps" />
+                <BsFillBuildingsFill size={34} className="text-yellow-400 m-2"/>
               </div>
               <div>
                 <h1 className="text-2xl font-bold"> By College Clubs</h1>
@@ -88,11 +89,11 @@ const Tools = () => {
         </h1>
         <a href="#up">
           <button
-          id="contact"
-          className="text-white  bg-gradient-to-r  from-pink-500 to-purple-700 px-[4rem] font-semibold py-[0.7rem] rounded-3xl  hover:from-purple-700 hover:to-pink-500 dark:hover:bg-[#0F1221]  m-auto"
-        >
-          Connect Wallet
-        </button>
+            id="contact"
+            className="text-white  bg-gradient-to-r  from-pink-500 to-purple-700 px-[4rem] font-semibold py-[0.7rem] rounded-3xl  hover:from-purple-700 hover:to-pink-500 dark:hover:bg-[#0F1221]  m-auto"
+          >
+            Connect Wallet
+          </button>
         </a>
       </div>
     </>

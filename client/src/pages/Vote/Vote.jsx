@@ -20,9 +20,9 @@ const Vote = () => {
         return nftBalance && nftBalance.gt(0)
     }, [nftBalance]);
 
-    if (!hasClaimedNFT) {
-        navigate('/');
-    }
+    // if (!hasClaimedNFT) {
+    //     navigate('/');
+    // }
 
     const shortenAddress = (str) => {
         return str.substring(0, 6) + '...' + str.substring(str.length - 4);
@@ -30,7 +30,7 @@ const Vote = () => {
 
     useEffect(() => {
         if (!hasClaimedNFT) {
-            return;
+            return navigate('/');;
         }
 
         // A simple call to vote.getAll() to grab the proposals.
