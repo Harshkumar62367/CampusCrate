@@ -16,11 +16,11 @@ const VerticalNav = ({ children, name }) => {
     const navigate = useNavigate();
     const address = useAddress();
 
-    // useEffect(() => {
-    //     if (!address) {
-    //         navigate('/');
-    //     }
-    // }, [])
+    useEffect(() => {
+        if (!address) {
+            navigate('/');
+        }
+    }, [])
 
     return (
         <div className='pt-0 mt-0'>
